@@ -1,0 +1,15 @@
+C:\Users\daida\source\repos\QLNV\QLNV\bin\Debug\QLNV.exe.config
+C:\Users\daida\source\repos\QLNV\QLNV\bin\Debug\QLNV.exe
+C:\Users\daida\source\repos\QLNV\QLNV\bin\Debug\QLNV.pdb
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.csprojAssemblyReference.cache
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.Properties.Resources.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.csproj.GenerateResource.cache
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.exe
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.pdb
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.frm_Login.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.Frm_Main.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.Frm_NV.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.frm_Luong.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.frm_PhongBanNV.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.frm_PhongBan.resources
+C:\Users\daida\source\repos\QLNV\QLNV\obj\Debug\QLNV.frm_NV_TDHV.resources

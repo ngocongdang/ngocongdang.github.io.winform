@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8B9200D-DB07-41A8-8384-9ADB672A1EDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLNV</RootNamespace>
+    <AssemblyName>QLNV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BTLDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CystalReportLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CystalReportLuong.Designer.cs">
+      <DependentUpon>CystalReportLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Luong.Designer.cs">
+      <DependentUpon>frm_Luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NV.Designer.cs">
+      <DependentUpon>frm_NV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NV_TDHV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NV_TDHV.Designer.cs">
+      <DependentUpon>frm_NV_TDHV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhongBan.Designer.cs">
+      <DependentUpon>frm_PhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PhongBanNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhongBanNV.Designer.cs">
+      <DependentUpon>frm_PhongBanNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CystalReportLuong.resx">
+      <DependentUpon>CystalReportLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Luong.resx">
+      <DependentUpon>frm_Luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NV.resx">
+      <DependentUpon>frm_NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NV_TDHV.resx">
+      <DependentUpon>frm_NV_TDHV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhongBan.resx">
+      <DependentUpon>frm_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhongBanNV.resx">
+      <DependentUpon>frm_PhongBanNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BTLDataSet.xsc">
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet.xss">
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet1.xsc">
+      <DependentUpon>BTLDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet1.xss">
+      <DependentUpon>BTLDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet10.xsc">
+      <DependentUpon>BTLDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet10.xss">
+      <DependentUpon>BTLDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet2.xsc">
+      <DependentUpon>BTLDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet2.xss">
+      <DependentUpon>BTLDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet3.xsc">
+      <DependentUpon>BTLDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet3.xss">
+      <DependentUpon>BTLDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet4.xsc">
+      <DependentUpon>BTLDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet4.xss">
+      <DependentUpon>BTLDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet5.xsc">
+      <DependentUpon>BTLDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet5.xss">
+      <DependentUpon>BTLDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet6.xsc">
+      <DependentUpon>BTLDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet6.xss">
+      <DependentUpon>BTLDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet7.xsc">
+      <DependentUpon>BTLDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet7.xss">
+      <DependentUpon>BTLDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet8.xsc">
+      <DependentUpon>BTLDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet8.xss">
+      <DependentUpon>BTLDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet9.xsc">
+      <DependentUpon>BTLDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet9.xss">
+      <DependentUpon>BTLDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

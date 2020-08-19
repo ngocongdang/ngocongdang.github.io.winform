@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BTLDataSet6" targetNamespace="http://tempuri.org/BTLDataSet6.xsd" xmlns:mstns="http://tempuri.org/BTLDataSet6.xsd" xmlns="http://tempuri.org/BTLDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BTLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BTLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNV.Properties.Settings.GlobalReference.Default.BTLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblTrinhDoHocVanTableAdapter" GeneratorDataComponentClassName="tblTrinhDoHocVanTableAdapter" Name="tblTrinhDoHocVan" UserDataComponentName="tblTrinhDoHocVanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BTLConnectionString (Settings)" DbObjectName="BTL.dbo.tblTrinhDoHocVan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sTDHV FROM dbo.tblTrinhDoHocVan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sTDHV" DataSetColumn="sTDHV" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BTLDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BTLDataSet6" msprop:Generator_UserDSName="BTLDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblTrinhDoHocVan" msprop:Generator_TableClassName="tblTrinhDoHocVanDataTable" msprop:Generator_TableVarName="tabletblTrinhDoHocVan" msprop:Generator_TablePropName="tblTrinhDoHocVan" msprop:Generator_RowDeletingName="tblTrinhDoHocVanRowDeleting" msprop:Generator_RowChangingName="tblTrinhDoHocVanRowChanging" msprop:Generator_RowEvHandlerName="tblTrinhDoHocVanRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTrinhDoHocVanRowDeleted" msprop:Generator_UserTableName="tblTrinhDoHocVan" msprop:Generator_RowChangedName="tblTrinhDoHocVanRowChanged" msprop:Generator_RowEvArgName="tblTrinhDoHocVanRowChangeEvent" msprop:Generator_RowClassName="tblTrinhDoHocVanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sTDHV" msprop:Generator_ColumnVarNameInTable="columnsTDHV" msprop:Generator_ColumnPropNameInRow="sTDHV" msprop:Generator_ColumnPropNameInTable="sTDHVColumn" msprop:Generator_UserColumnName="sTDHV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

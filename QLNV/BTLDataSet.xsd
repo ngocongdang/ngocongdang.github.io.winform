@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BTLDataSet" targetNamespace="http://tempuri.org/BTLDataSet.xsd" xmlns:mstns="http://tempuri.org/BTLDataSet.xsd" xmlns="http://tempuri.org/BTLDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BTLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BTLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNV.Properties.Settings.GlobalReference.Default.BTLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblPhongBanTableAdapter" GeneratorDataComponentClassName="tblPhongBanTableAdapter" Name="tblPhongBan" UserDataComponentName="tblPhongBanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BTLConnectionString (Settings)" DbObjectName="BTL.dbo.tblPhongBan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sTenPB FROM dbo.tblPhongBan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sTenPB" DataSetColumn="sTenPB" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BTLDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BTLDataSet" msprop:Generator_UserDSName="BTLDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblPhongBan" msprop:Generator_TableClassName="tblPhongBanDataTable" msprop:Generator_TableVarName="tabletblPhongBan" msprop:Generator_TablePropName="tblPhongBan" msprop:Generator_RowDeletingName="tblPhongBanRowDeleting" msprop:Generator_RowChangingName="tblPhongBanRowChanging" msprop:Generator_RowEvHandlerName="tblPhongBanRowChangeEventHandler" msprop:Generator_RowDeletedName="tblPhongBanRowDeleted" msprop:Generator_UserTableName="tblPhongBan" msprop:Generator_RowChangedName="tblPhongBanRowChanged" msprop:Generator_RowEvArgName="tblPhongBanRowChangeEvent" msprop:Generator_RowClassName="tblPhongBanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sTenPB" msprop:Generator_ColumnVarNameInTable="columnsTenPB" msprop:Generator_ColumnPropNameInRow="sTenPB" msprop:Generator_ColumnPropNameInTable="sTenPBColumn" msprop:Generator_UserColumnName="sTenPB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
